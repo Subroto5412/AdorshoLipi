@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soroborno_bg"
+    tools:context=".BanjonbornoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/left_side"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_layout">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/back"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/back_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/home"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sound_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/home_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/music"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/left_side"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_13sdp"
+        android:layout_marginStart="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layer01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_1"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ka1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_2"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/kha2"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_3"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ga3"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_4"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/gha4"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_5"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/uo5"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_6"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ch7"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_7"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/cha8"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_8"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bj9"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_9"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/jha10"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_10"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/uyo11"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layer02"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layer01">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_11"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ta12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_12"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tha13"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_13"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dha14"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_14"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/do15"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_15"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mno16"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_14"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_16"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/to17"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_15"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_17"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tho18"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_16"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_18"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/do19"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_17"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_19"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dho20"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_18"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_20"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/no21"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_19"
+                app:layout_constraintTop_toTopOf="parent" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layer03"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layer02">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_21"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/po22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_22"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fo23"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_21"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_23"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bo24"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_22"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_24"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vo25"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_23"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_25"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mo26"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_24"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_26"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/j27"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_25"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_27"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/r28"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_26"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_28"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/l29"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_27"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_29"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tai30"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_28"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_30"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mno31"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_29"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layer04"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layer03">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_31"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/soreo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="invisible"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_32"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dso32"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_31"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_33"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ho33"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_32"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_34"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dio34"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_33"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_35"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dhio35"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_34"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_36"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/jo36"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_35"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_37"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/khd37"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_36"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_38"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/oni38"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_37"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_39"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bis39"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_38"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/banjonborno_40"
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/chad40"
+                app:layout_constraintStart_toEndOf="@id/banjonborno_39"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
